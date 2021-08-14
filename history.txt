@@ -1,0 +1,137 @@
+    1  ls -a
+    2  sudo -i
+    3  ls -a
+    4  sudo -i
+    5  https://github.com/devopshydclub/vprofile-repo.git
+    6  ls  -a
+    7  sudo -i
+    8  ls -a
+    9  print("uday")
+   10  print"uday"
+   11  print "uday"
+   12  print ("uday")
+   13  print(" uday ")
+   14  vi helloworld.py
+   15  ./helloworld.py
+   16  sudo -i
+   17  ls
+   18  ls -l
+   19  vi helloworld.py
+   20  ./helloworld.py
+   21  ls -a
+   22  ./helloworld.py
+   23  vi helloworld.py
+   24  vi slice.py
+   25  ./slice.py
+   26  chmod +x slice.py
+   27  ./slice.py
+   28  vi slice.py
+   29  ./slice.py
+   30  vi slice.py
+   31  vi slice.py
+   32  ls -a
+   33  ./slice.py
+   34  vi slice.py
+   35  ls -a
+   36  rm .slice.py.swp
+   37  rm .slice.py.swo
+   38  ls -a
+   39  vi slice.py
+   40  ./slice.py
+   41  vi slice.py
+   42  ./slice.py
+   43  vi slice.py
+   44  ./slice.py
+   45  vi slice.py
+   46  ./slice.py
+   47  vi slice.py
+   48  ./slice.py
+   49  ls -a
+   50  vi slice.py
+   51  ./slice.py
+   52  vi slice.py
+   53  ./slice.py
+   54  vi slice.py
+   55  ./slice.py
+   56  vi slice.py
+   57  ./slice.py
+   58  vi slice.py
+   59  ./slice.py
+   60  ls -a
+   61  sudo -i
+   62  ls -l
+   63  ls -a
+   64  touch variable_length_arg.py
+   65  ls -a
+   66  vi variable_length_arg.py
+   67  ls -a
+   68  ./variable_length_arg.py
+   69  chmod +x varaible_length_arg.py
+   70  ls -l
+   71  chmod +x variable_length_arg.py
+   72  chmod +x variable_length_arg.pls -a
+   73  ls -a
+   74  ./variable_length_arg.py
+   75  vi slice.py
+   76  vi variable_length_arg.py
+   77  ./variable_length_arg.py
+   78  ls -a
+   79  vi variable_length_arg.py
+   80  ./variable_length_arg.py
+   81  vi variable_length_arg.py
+   82  ./variable_length_arg.py
+   83  ls -a
+   84  touch method.py
+   85  chmod +x method.py
+   86  ls -a
+   87  vi method.py
+   88  ./method.py
+   89  vi method.py
+   90  ./method.py
+   91  vi variable_length_arg.py
+   92  ./method.py
+   93  ansible --version
+   94  ls -a
+   95  ansible --version
+   96  ls -a
+   97  cd 8;2uove
+   98  cd Dove
+   99  ls -a
+  100  touch dove_inventory
+  101  vi dove_inventory
+  102  ls -a
+  103  ansible -i ./deve_inventory -m ping web01
+  104  logout
+  105  ls -a
+  106  ansible --version
+  107  ls -a
+  108  ls -l
+  109  mkdir Dove
+  110  ls -l
+  111  git init
+  112  cd dove
+  113  cd Dove
+  114  git init
+  115  ls -a
+  116  vi dove_inventory
+  117  vi dove-key
+  118  ls -a
+  119  ls -l
+  120  chmod 400 dove-key
+  121  mv dove-key Dove
+  122  cd Dove
+  123  ls -a
+  124  ansible -i ./dove_inventory -m ping web01
+  125  mv dove-key dove-key.pem
+  126  ls -a
+  127  ansible -i ./dove_inventory -m ping web01
+  128  ls -a
+  129  cd Dove
+  130  ansible -i ./dove_inventory -m ping db02
+  131  ansible -i ./dove_inventory -m ping db01
+  132  ansible -i ./dove_inventory -m ping all
+  133  ansible -i ./dove_inventory -m ping '*'
+  134  ansible -i ./dove_inventory -m ping 'web*'
+  135  ls -a
+  136  history
+  137  history > history.txt
