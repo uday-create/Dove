@@ -1,0 +1,36 @@
+---
+- name: web deploy
+  hosts: websrvgrp
+  become: yes
+  tasks: 
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: start & enable service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Deploy file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+
+
+- name: db deploy
+  hosts: dbsrvgrp
+  become: yes
+  tasks: 
+    - name: install mariadb
+      yum:
+        name: mariadb-server
+        state: present
+
+    - name: start & enable service
+      service:
+        name: mariadb
+        state: started
+        enabled: yes

@@ -1,0 +1,55 @@
+---
+- name: web deploy
+  hosts: websrvgrp
+  become: yes
+  tasks: 
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: start & enable service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Deploy file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+
+
+- name: db deploy
+  hosts: dbsrvgrp
+  become: yes
+  tasks: 
+    - name: install mariadb
+      yum:
+        name: mariadb-server
+        state: present
+
+    - name: install MySQL-python
+      yum:
+        name: MySQL-python
+        state: present
+
+    - name: start & enable service
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
+
+    - name: create a database account
+      mysql_db:
+        name: bobdata
+        state: present
+
+    - name: create a user with full privilage
+      mysql_user:
+        name: bob
+        password: 12345
+        priv: '*.*:ALL'
+        state: present
+        #    - name: deploy sql file
+
